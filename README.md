@@ -51,7 +51,7 @@ Additional simulation scenarios can be implemented by modifying the example scri
 
 * The scripts are designed to reproduce the main components of the simulation study.
 * Simulation settings (e.g., sample size, number of replications, DGMs) can be adjusted within the scripts.
-* Runtime depends on the chosen settings; larger simulation runs may take substantial computation time.
+* Runtime depends on the chosen settings; larger simulation runs may be computationally intensive and may benefit from parallel or server-based execution.
 
 ---
 
