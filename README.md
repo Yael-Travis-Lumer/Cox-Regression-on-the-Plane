@@ -1,11 +1,63 @@
 # Cox-Regression-on-the-Plane
-This repository contains the R code for the simulations from the paper "Cox Regression on the Plane". The estimation is based on a generalization of the bivariate pseudo-observations approach, and includes a two-step estimation procedure for the generalized Lehmann model.
 
-## Description
-This repository contains two folders: one folder for the helper functions and another folder for the simulation functions.
+This repository contains the R code for the simulation study in the paper
+**“Cox Regression on the Plane.”**
+A preprint is available at: https://arxiv.org/abs/2509.12473
 
-### helper functions
-This folder contains various helper functions tat are needed for the simulations to run.
+The implementation is based on a generalization of the bivariate pseudo-observations approach and includes a two-step estimation procedure for the generalized Lehmann model.
 
-### simulations
-This folder contains three files: (1) functions to generate the simulated bivariate right censored data (corresponding to the 4 DGMs in the paper), (2) an example of the estimation procedure for the Frank NOD setting (Section 5 of our paper), and (3) a run_sim function that runs the simulations using parallel computations. Additional simulation settings can be derived similarly.
+---
+
+## 📦 Overview
+
+This repository allows you to:
+
+* Simulate bivariate survival data under multiple data-generating mechanisms (DGMs)
+* Fit the simple Lehmann model and the generalized Lehmann model
+* Apply the proposed two-step estimation procedure
+* Compare with copula-based models
+* Reproduce representative simulation results reported in the paper
+
+The generalized Lehmann model is estimated via a two-step procedure: marginal parameters are estimated first, followed by estimation of the dependence parameter conditional on the first step. The example script provides a minimal working pipeline from data generation to estimation.
+
+---
+
+## Repository Structure
+
+The repository contains two main folders:
+
+### `helper_functions`
+
+This folder contains auxiliary functions required for the simulations, including routines for estimation, variance calculation, and supporting computations.
+
+### `simulations`
+
+This folder contains:
+
+1. **Data generation functions**
+   Functions to simulate bivariate right-censored data under the four DGMs considered in the paper.
+
+2. **Example script**
+   An example illustrating the estimation procedure for the Frank NOD setting (see Section 5 of the paper).
+
+3. **Simulation runner**
+   A `run_sim` function that executes simulation studies using parallel computation.
+
+Additional simulation scenarios can be implemented by modifying the example script accordingly.
+
+---
+
+## Reproducibility Notes
+
+* The scripts are designed to reproduce the main components of the simulation study.
+* Simulation settings (e.g., sample size, number of replications, DGMs) can be adjusted within the scripts.
+* Runtime depends on the chosen settings; larger simulation runs may take substantial computation time.
+
+---
+
+## Citation
+
+If you use this code, please cite the corresponding paper:
+
+*Travis-Lumer, Y., Mandel, M., Fabian I. D., Betensky, R. A., and Gorfine, M. (2025).*
+*Cox Regression on the Plane.*
