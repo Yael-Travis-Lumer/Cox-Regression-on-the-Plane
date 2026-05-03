@@ -38,9 +38,9 @@ This folder contains:
    Functions to simulate bivariate right-censored data under the four DGMs considered in the paper.
 
 2. **Example script**
-   An example illustrating the estimation procedure for the Frank NOD setting (see Section 5 of the paper).
+ An example illustrating the estimation procedure for the Frank NOD setting, reproducing a representative simulation setting from Section 5 of the paper.
 
-3. **Simulation runner**
+4. **Simulation runner**
    A `run_sim` function that executes simulation studies using parallel computation.
 
 Additional simulation scenarios can be implemented by modifying the example script accordingly.
