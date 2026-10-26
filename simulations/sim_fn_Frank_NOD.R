@@ -2,11 +2,11 @@ rm(list = ls())
 
 source("run_sim.R")
 source("data_generating.R")
-source("three_PO_functions.R")
-source("GEE_functions.R")
-source("geem source code.R")
-source("fit_predict_gjrm.R")
-source("variance and coverage functions.R")
+source("../helper functions/three_PO_functions.R")
+source("../helper functions/GEE_functions.R")
+source("../helper functions/geem source code.R")
+source("../helper functions/fit_predict_gjrm.R")
+source("../helper functions/variance and coverage functions.R")
 
 #' An example for a sim_fn function
 #' @param setting_param_list parameters that changes at each run
