@@ -186,7 +186,7 @@ sim_fn <- function(setting_param_list,fixed_param_list){
     pred_simple = list(pred_simple),
     
     betas_gen = list(betas_df_gen_v2),
-    var_marg = list(var_marf),
+    var_marg = list(var_marg),
     var_betas_gen = list(var_betas_gen),
     var_betas_schur = list(var_betas_schur),
     var_betas_gen_gee = list(var_betas_gen_gee),
