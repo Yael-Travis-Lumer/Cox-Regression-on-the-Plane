@@ -26,7 +26,7 @@ The generalized Lehmann model is estimated via a two-step procedure: marginal pa
 
 The repository contains two main folders:
 
-### `helper_functions`
+### `helper functions`
 
 This folder contains auxiliary functions required for the simulations, including routines for estimation, variance calculation, and supporting computations.
 
